@@ -1,12 +1,13 @@
-const greeting = "Welcome to the password validator tool"
 
-const prompt = "Please enter your password for validaion"
+console.log ("Welcome to the password validator tool")
 
-var passwwrod = 9 
+console.log ("Please enter your password for validaion")
 
-if (passwwrod >= 10){
+var password = 10
+
+if (password >= 10){
     console.log ("Your password works great!")
 }
 else {
-    console.log("Your passwrod could use some work.")
+    console.log("Your password could use some work.")
 }
