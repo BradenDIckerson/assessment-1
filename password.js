@@ -1,13 +1,26 @@
 
-console.log ("Welcome to the password validator tool")
+const readline = require('readline');
 
-console.log ("Please enter your password for validaion")
+const reader = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
-var password = 10
 
-if (password >= 10){
-    console.log ("Your password works great!")
-}
-else {
-    console.log("Your password could use some work.")
-}
+
+reader.question("Welcome!", function(input){
+	pass = input.split(' ');
+	
+    // const passValue = /[10-100]/g;
+
+	// passValidate = pass[0];
+	let passValue = input;
+    
+   if( passValue.length >= 10){
+    console.log("Password Accepted")
+  }
+  else {console.log("Needs more characters")}
+
+
+reader.close()
+});
